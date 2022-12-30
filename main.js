@@ -1,11 +1,26 @@
-function catchError(fn) {
-    try {
-        fn();
+// function catchError(fn) {
+//     try {
+//         fn();
+//     }
+//     catch(err){
+//         return err;
+//     }
+//     return false;
+// }
+
+// module.exports = catchError;
+
+
+function toNumber(string) {
+    number = Number(string);
+    if (number){
+        return number;
     }
-    catch(err){
-        return err;
+    else{
+        return 0;
     }
-    return false;
+    
+
 }
 
-module.exports = catchError;
+module.exports = toNumber;
